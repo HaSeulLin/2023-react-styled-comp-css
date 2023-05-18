@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import CounterComp from './features/counter/CounterComp';
+import InputForm from './features/inputform/InputForm';
+import StyleComp from './features/styleComp/StyleComp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CounterComp />
+      <InputForm />
+      <StyleComp>스타일 컴포넌트</StyleComp>
     </div>
   );
 }
